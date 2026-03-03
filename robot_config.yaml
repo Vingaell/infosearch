@@ -1,0 +1,15 @@
+# Конфигурация для загрузки в MongoDB
+db:
+  uri: "mongodb://localhost:27017/"
+  database: "wikipedia_corpus"
+  collection: "literature"
+
+logic:
+  # Путь к JSONL файлу с данными
+  jsonl_file: "wiki_literature/docs.jsonl"
+  
+  # Задержка между вставками (секунды)
+  delay: 0.1
+  
+  # Максимум документов для загрузки
+  max_documents: 35000
